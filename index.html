@@ -43,10 +43,24 @@
             transform: scale(1.1);
         }
 
+        #hero iframe {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         a {
             text-decoration: none;
             color: white;
         }
+        #ContactUs {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: gray;
+            padding: 10px;
+         }
     </style>
 </head>
 <body>
@@ -170,6 +184,28 @@
             <p>We have a long history of Business up front and party in the back. We are know as the 'Mullet' company and we pride ourselves on being able to handle any siutaiton from the board room to the green room. No one can handle both your business and fun the way we can. Get in touch with one of our professional Party Host Agents and they'll get you started on the trip of a lifetime.</p>
         </div>
     </section>
+    <div id="ContactUs">
+        <h1>Contact Us</h1>
+        <form action="#">
+            <div class="form-shape">
+                <label for="name">Name</label>
+                <input type="text" name="myName" id="name"
+                    placeholder="Enter your Name">
+            </div>
+            <div class="form-shape">
+                <label for="email">Email-Id</label>
+                <input type="email" name="myEmail" id="email"
+                    placeholder="Enter your email">
+            </div>
+            <div class="form-shape">
+                <label for="pho">Phone Number</label>
+                <input type="phone" name="myPhone" id="pho"
+                    placeholder="Enter your Phone no">
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
 </main>
 
 <footer class="text-center">
